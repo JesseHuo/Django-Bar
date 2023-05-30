@@ -1,0 +1,40 @@
+.navbar-brand{
+    color: #F97B22;
+}
+
+.nav-link{
+    color:#7C9070;
+}
+
+
+.card-header{
+    background-color: #9CA777;
+    color: white;
+}
+
+h1{
+    color:#F97B22;
+}
+
+h2{
+    color:#9CA777;
+}
+
+h3{
+    color:#9CA777;
+}
+
+p{
+    color:#7C9070;
+}
+
+
+/* 
+orange #F97B22
+yellow #FEE8B0
+light_sage #9CA777
+dark_sage #7C9070
+rgb(249, 123, 34)
+rgb(254, 232, 176)
+rgb(156, 167, 119)
+rgb(124, 144, 112) */

@@ -1,0 +1,25 @@
+
+{% extends 'drinks/base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+            {% for item in item_list %}
+            <div class="card col-md-3">
+                <a href="{% url 'drinks:detail' item.id %}">
+                    <img class="card-img-top" src="{{ item.item_image.url }}" alt="Card image cap" href="{% url 'drinks:detail' item.id %}">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title"> {{ item.item_name }} </h5>
+                    <p class="card-text"> {{ item.item_desc }}</p>
+                    <h5 class="card-text"> ${{ item.item_price }}</h5>
+                    <a href="{% url 'drinks:detail' item.id %}" class="btn" style="background-color:#F97B22; color: white;"> Let's Make It !</a>
+                    <a href="{% url 'drinks:update_item' item.id %}" class="btn" style="background-color:#9CA777; color: white;"> Change Recipe</a>
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+</div>
+
+{% endblock %}

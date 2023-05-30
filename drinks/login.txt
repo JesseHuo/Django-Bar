@@ -1,0 +1,17 @@
+username:jesse.huo
+pw:superuser
+
+jessehuo
+testtest!
+
+Potential improvments:
+1. seperate alcoholic & non-alcoholic drinks
+    a. add a boolean field to Item model
+
+2. make ingredient field a list 
+    a. break each item in the list into number (oz) & text
+    b. load each ingredient in a row on the detail page
+
+3. user can save a list of favorite drinks?
+
+4. change create & update to class based view

@@ -1,0 +1,35 @@
+{% extends 'drinks/base.html' %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card">
+                <div class="card-header" style="background-color:#9CA777; color: white;">
+                    <div class="card-title">
+                        Login
+                    </div>
+                </div>
+                <div class="card-body">                                        
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <!-- present form as "p" -->
+                        <!-- {% for field in form %}
+                            <div class="form-group">
+                                {{field.name}}
+                                {{field}}
+                            </div>
+                        {% endfor %} -->
+                        <button class="btn btn-dark" type="submit">Log In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
